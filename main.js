@@ -83,5 +83,5 @@ function calcSum(x, y) {
   var res = x + y;
   console.log(res);
 }
-
+// call--- invoke
 calcSum(100, 100) 
