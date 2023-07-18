@@ -84,4 +84,4 @@ function calcSum(x, y) {
   console.log(res);
 }
 
-calcSum(100, 100)
+calcSum(100, 100) 
