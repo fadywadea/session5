@@ -137,3 +137,14 @@ function hello() {
   console.log(y);  // local scope
 }
 hello();
+/*--------------------------------------------------------------------------------*/
+for (var i = 0; i < 100; i++) {
+  console.log("bl7");
+}
+console.log(i);
+var userAge = 20;
+if (userAge > 2) {
+  var btee5 = "btee5";
+}
+console.log(btee5);
+/*--------------------------------------------------------------------------------*/
