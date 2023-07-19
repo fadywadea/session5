@@ -148,3 +148,23 @@ if (userAge > 2) {
 }
 console.log(btee5);
 /*--------------------------------------------------------------------------------*/
+var z = 10;
+console.log(z); //10
+
+function hello() {
+  console.log(z); //10
+  z = 30;
+}
+
+hello();
+
+console.log(z);//30
+/*--------------------------------------------------------------------------------*/
+var f = 10;
+console.log(f);
+
+// self invoke function
+
+(function() {
+  console.log("btee55");
+})();
