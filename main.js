@@ -21,8 +21,6 @@
 
 /*--------------------------------------------------------------------------------*/
 
-
-
 // var numb11 = prompt("Enter a number :");
 
 // numb11 = Number(numb11);
@@ -35,13 +33,10 @@
 //   }
 /*--------------------------------------------------------------------------------*/
 
-
-
 // if (typeof price == "string") {
 //   price = Number(price)
 // }
 // }
-
 
 /*--------------------------------------------------------------------------------*/
 
@@ -55,7 +50,6 @@
 // }
 
 // calcproductPrice(40000,2000,0.2)
-
 
 // var numb1 = prompt("Enter the first integer: ");
 // var numb2 = prompt("Enter the second integer: ");
@@ -79,9 +73,67 @@
 //     break;
 // }
 /*--------------------------------------------------------------------------------*/
-function calcSum(x, y) {
-  var res = x + y;
-  console.log(res);
+// // x,y ==> parameters
+// function calcSum(x, y) {
+//   var res = x + y;
+//   console.log(res);
+// }
+// // call--- invoke
+// // 100, 200 ===> arguments
+// calcSum(100, 200)
+
+// function calcproductPrice(price, profit, vat) {
+//   if (price == undefined) {
+//     price = 40000;
+//   }
+//   if (profit == undefined) {
+//     profit = 2000;
+//   }
+//   if (vat == undefined) {
+//     vat = 0.2;
+//   }
+//   var priceWithProfit = price + profit;
+//   var finalPrice = priceWithProfit + priceWithProfit * vat;
+//   console.log(finalPrice);
+// }
+
+// calcproductPrice(40000, 2000);
+/*--------------------------------------------------------------------------------*/
+// var totalProductPrice = 0;
+// function calcproductPrice(price, profit, vat) {
+//   var priceWithProfit = price + profit;
+//   var finalPrice = priceWithProfit + priceWithProfit * vat;
+//   return finalPrice;
+// }
+// // console.log(calcproductPrice(40000, 2000, 0.2));
+// totalProductPrice = totalProductPrice + calcproductPrice(40000, 2000, 0.2);
+// console.log(totalProductPrice);
+
+// totalProductPrice = totalProductPrice + calcproductPrice(4000, 200, 0.2);
+// console.log(totalProductPrice);
+
+// totalProductPrice = totalProductPrice + calcproductPrice(400, 20, 0.2);
+// console.log(totalProductPrice);
+// var res = calcproductPrice(40000, 2000, 0.2);
+// console.lo;
+/*--------------------------------------------------------------------------------*/
+// declaration | statement function
+// function hello(x) {
+//   console.log("Hello", x);
+// }
+// hello(10)
+/*--------------------------------------------------------------------------------*/
+// expression function
+// var hello = function (x) {
+//   console.log("Hellos", x);
+//   return "bate5";
+// }
+// var res = hello(100);
+/*--------------------------------------------------------------------------------*/
+var x = 10;
+console.log(x);
+function hello() {
+  var y = 30;
+  console.log(y);  // local scope
 }
-// call--- invoke
-calcSum(100, 100) 
+hello();
