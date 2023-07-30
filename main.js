@@ -9,7 +9,7 @@
 // if (userRole === "admin") {
 //   console.log("u can do anything");
 //   if (userAge > 18) {
-//     console.log("welcom");
+//     console.log("welcome");
 //   }
 // } else if (userRole === "editor") {
 //   console.log("u can edit");
@@ -130,41 +130,70 @@
 // }
 // var res = hello(100);
 /*--------------------------------------------------------------------------------*/
-var x = 10;
-console.log(x);
-function hello() {
-  var y = 30;
-  console.log(y);  // local scope
-}
-hello();
+// var x = 10;
+// console.log(x);
+// function hello() {
+//   var y = 30;
+//   console.log(y);  // local scope
+// }
+// hello();
+// /*--------------------------------------------------------------------------------*/
+// for (var i = 0; i < 100; i++) {
+//   console.log("bl7");
+// }
+// console.log(i);
+// var userAge = 20;
+// if (userAge > 2) {
+//   var btee5 = "btee5";
+// }
+// console.log(btee5);
+// /*--------------------------------------------------------------------------------*/
+// var z = 10;
+// console.log(z); //10
+
+// function hello() {
+//   console.log(z); //10
+//   z = 30;
+// }
+
+// hello();
+
+// console.log(z);//30
+// /*--------------------------------------------------------------------------------*/
+// var f = 10;
+// console.log(f);
+
+// // self invoke function
+
+// (function() {
+//   console.log("btee55");
+// })();
 /*--------------------------------------------------------------------------------*/
-for (var i = 0; i < 100; i++) {
-  console.log("bl7");
+// var userInp = prompt("please enter the key u want ");
+// var user = {
+//   name: "fady",
+//   age : 24,
+//   salary: "5000EGP",
+//   haveACar: true,
+//   eat : function (){
+//     console.log("pizza");
+//   }
+// }
+
+// console.log(user['name']);
+// console.log(user['userInp']);
+// console.log(user.userInp);
+/*-----------------------------------9---------------------------------------------*/
+var btn = Array.from(document.querySelectorAll("button"));
+var btn1 = document.querySelector(".btn-danger");
+
+var index = btn.indexOf(btn1);
+console.log(index);
+
+for (var i = 0; i < btn.length; i++) {
+  if (i != index) {
+    btn[i].addEventListener("click", function () {
+      console.log("hei");
+    })
+  }
 }
-console.log(i);
-var userAge = 20;
-if (userAge > 2) {
-  var btee5 = "btee5";
-}
-console.log(btee5);
-/*--------------------------------------------------------------------------------*/
-var z = 10;
-console.log(z); //10
-
-function hello() {
-  console.log(z); //10
-  z = 30;
-}
-
-hello();
-
-console.log(z);//30
-/*--------------------------------------------------------------------------------*/
-var f = 10;
-console.log(f);
-
-// self invoke function
-
-(function() {
-  console.log("btee55");
-})();
