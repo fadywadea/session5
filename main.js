@@ -183,17 +183,170 @@
 // console.log(user['name']);
 // console.log(user['userInp']);
 // console.log(user.userInp);
+/*-----------------------------------1---------------------------------------------*/
+// var btn = Array.from(document.querySelectorAll("button"));
+// var btn1 = document.querySelector(".btn-danger");
+
+// var index = btn.indexOf(btn1);
+// console.log(index);
+
+// for (var i = 0; i < btn.length; i++) {
+//   if (i != index) {
+//     btn[i].addEventListener("click", function () {
+//       console.log("hei");
+//     })
+//   }
+// }
+/*-----------------------------------2---------------------------------------------*/
+// var allImages = document.querySelectorAll(".images img");
+// var mainImage = document.querySelector("#mainImage");
+
+// for (var i = 0; i < allImages.length; i++) {
+//   allImages[i].addEventListener("click", function (e) {
+//     var clickItems = e.target.getAttribute("src");
+//     mainImage.setAttribute("src", clickItems);
+//     mainImage.setAttribute("alt", "bte5");
+//   });
+// }
+
+/*-----------------------------------3---------------------------------------------*/
+//  spread
+// let ages = [10, 20, 30, 40];
+
+// //rest params
+// function calcSum(...ay7aga) {
+//   if (ay7aga.length) {
+//     let sum = 0;
+//     for (let i = 0; i < ay7aga.length; i++) {
+//       sum += ay7aga[i];
+//     }
+//     let av = sum / ay7aga.length;
+//     console.log(av);
+//     console.log(ay7aga);
+//   }
+// }
+
+// calcSum(...ages);
+// calcSum();
+// calcSum(10, 20, 30, 40, 100);
+
+/*-----------------------------------4---------------------------------------------*/
+
+// let x = [];
+// if(x){
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+
+/*-----------------------------------5---------------------------------------------*/
+// let person = {
+//   name: "ahmed",
+//   age: 33,
+//   x: {
+//     y: {
+//       z: {
+//         name1: "text1",
+//         name2: "text2",
+//         name3: "text3"
+//       },
+//     },
+//   },
+// };
+
+// let { name1, name2, name3: bte5 } = person.x.y.z
+// console.log(name1);
+// console.log(name2);
+// console.log(bte5);
+
+/*-----------------------------------6---------------------------------------------*/
+// "use strict";
+/*-----------------------------------7---------------------------------------------*/
+// let person = {
+//   name: "ahmed",
+//   salary: 4000,
+//   calcSalary: function(){
+//     let calcVat  = () => this.salary * 0.1;
+//     return this.salary -  calcVat();
+//   }
+// }
+
+// let res = person .calcSalary();
+// console.log(res);
+/*-----------------------------------8---------------------------------------------*/
+// let myReq = new XMLHttpRequest();
+// let allDate = []
+
+// myReq.open("GET", "")
+
+// myReq.send();
+
+// myReq.addEventListener("readystatechange", function () {
+//   if (myReq.readyState == 4 && myReq.status == 200) {
+//     allDate = JSON.parse(myReq.response);
+//     display();
+//   }
+// })
+
+// function display() {
+//   let carton =  ``;
+
+// }
 /*-----------------------------------9---------------------------------------------*/
-var btn = Array.from(document.querySelectorAll("button"));
-var btn1 = document.querySelector(".btn-danger");
+// class User {
+//   static counter = 0;
+//   constructor(uName, uAge, uGender, uSalary) {
+//     User.counter++;
+//     this.name = uName;
+//     this.age = uAge;
+//     this.gender = uGender;
+//     this.salary = uSalary;
+//   }
+//   Welcome() {
+//     console.log(`Welcome ${this.name}`);
+//   }
+//   login(userName, password) {
+//     console.log("success login");
+//   }
+//   static getCounter() {
+//     console.log(User.counter);
+//   }
+// }
 
-var index = btn.indexOf(btn1);
-console.log(index);
+// class Admin extends User {
+//   constructor(uName, uAge, uGender, uSalary, isAdmin) {
+//     super(uName, uAge, uGender, uSalary);
+//     this.isAdmin = isAdmin;
+//   }
+//   delete(ID) {
+//     console.log(`deleted ${ID}`);
+//   }
+// }
 
-for (var i = 0; i < btn.length; i++) {
-  if (i != index) {
-    btn[i].addEventListener("click", function () {
-      console.log("hei");
-    })
-  }
-}
+// let fady = new Admin("fady", 24, "male", 1000000, true);
+// let ahmed = new User("ahmed", 33, "male", 40000);
+// let mario = new User("mario", 44, "male", 50000);
+// let toto = new User("toto", 55, "male", 10000);
+// Admin.getCounter();
+/*-----------------------------------10---------------------------------------------*/
+// let person = {
+//   fullName: "John",
+//   age: 33,
+//   gender: "male",
+//   wife: {
+//     fullName: "nada",
+//     son: {
+//       fullName: "ans",
+//       mobile: {
+//         memory: "2GB",
+//       },
+//     },
+//   },
+// };
+// let {fullName} = person;
+// console.log(fullName);
+/*-----------------------------------11---------------------------------------------*/
+// let prices = [100, 20, 40, 80, 90, 60, 30];
+// let newPrice = prices.filter((price) => price < 50).map((price) => price + 10);
+// let sum = newPrice.reduce((total, price) => total + price);
+// console.log(sum);
