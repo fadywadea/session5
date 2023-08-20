@@ -350,3 +350,22 @@
 // let newPrice = prices.filter((price) => price < 50).map((price) => price + 10);
 // let sum = newPrice.reduce((total, price) => total + price);
 // console.log(sum);
+/*-----------------------------------12---------------------------------------------*/
+let person =  new Map();
+
+person.set("name", "ahmed").set("age", 24).set("gender", "male");
+
+person.set("salary", 10000);
+
+// person.has("gender");
+// person.delete("age");
+// person.get("salary");
+// person.clear();
+
+// console.log(person.values());
+
+for (const [Key , value] of person) {
+  console.log(`${Key}: ${value}`);
+}
+
+/*-----------------------------------13---------------------------------------------*/
