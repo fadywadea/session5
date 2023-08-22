@@ -351,11 +351,11 @@
 // let sum = newPrice.reduce((total, price) => total + price);
 // console.log(sum);
 /*-----------------------------------12---------------------------------------------*/
-let person =  new Map();
+// let person =  new Map();
 
-person.set("name", "ahmed").set("age", 24).set("gender", "male");
+// person.set("name", "ahmed").set("age", 24).set("gender", "male");
 
-person.set("salary", 10000);
+// person.set("salary", 10000);
 
 // person.has("gender");
 // person.delete("age");
@@ -364,8 +364,32 @@ person.set("salary", 10000);
 
 // console.log(person.values());
 
-for (const [Key , value] of person) {
-  console.log(`${Key}: ${value}`);
-}
+// for (const [Key , value] of person) {
+//   console.log(`${Key}: ${value}`);
+// }
 
 /*-----------------------------------13---------------------------------------------*/
+// let person = {
+//   name: 'John',
+//   age: 13,
+//   gender: 'Male',
+//   salary: 1000000
+// }
+
+// person = new Map(Object.entries(person));
+// console.log(person);
+
+// for (const [Key , value] of person) {
+//     console.log(`${Key}: ${value}`);
+//   }
+/*-----------------------------------14---------------------------------------------*/
+// $("#test").hide(3000);
+// $("#test").show(3000);
+// $("#test").toggle(3000);
+
+// $("#test").slideUp(3000);
+// $("#test").slideDown(3000);
+// $("#test").slideToggle(3000);
+$("#myBTN").click(function () {
+  $(".test").slideToggle(700);
+});
