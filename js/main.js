@@ -390,6 +390,120 @@
 // $("#test").slideUp(3000);
 // $("#test").slideDown(3000);
 // $("#test").slideToggle(3000);
-$("#myBTN").click(function () {
-  $(".test").slideToggle(700);
-});
+
+// $("#test").fadeIn(3000);
+// $("#test").fadeOut(3000);
+// $("#test").fadeToggle(3000);
+// $("#test").fadeTo(3000);
+
+// $(".test").fadeToggle(5000, function () {
+//   $("#myBTN").fadeTo(5000, 0.7, function () {
+//     $("#myBTN").hide(5000);
+//   })
+// });
+
+
+//chain 
+// $(".test").slideUp(1000).slideDown(2000).fadeOut(3000);
+
+// $("#myBTN").click(function () {
+//   $(".test").slideUp(1000).slideDown(2000).fadeOut(3000);
+// });
+/*-----------------------------------John---------------------------------------------*/
+// function element(elementId) {
+//   var carton = ``;
+//   for (var i = 0; i == elementId; i++) {
+//     carton += `<h2>web developer</h2>`;
+//   }
+//   document.getElementById(elementId).innerHTML = carton;
+// };
+/*-----------------------------------15---------------------------------------------*/
+// ? let timerId;
+
+// ? function startAlert(x) {
+
+// ?   alert('White Nutella' + x);
+// ?   x++;
+// ?   timerId = setTimeout(startAlert, 1, x);
+// ? }
+
+// ? function stopAlert() {
+// ?   clearTimeout(timerId)
+// ? }
+// todo: -----------------------------------16---------------------------------------------
+// ! $("section").animate({ width: '100%' }, 1000);
+// ! $("section").animate({ height: '100vh' }, 1000,
+// !   function () {
+// !     $("h4").slideDown(1000, function () {
+// !       $(".desc").slideDown(1000, function () {
+// !         $(".col-md-3").slideDown(1000)
+// !       })
+// !     });
+// !   });
+// todo:  -----------------------------------17---------------------------------------------
+// ? $("h3").click(function () {
+// ?   $("h3").append("<a href='#'>Google</a>")
+// ? });
+// ! $("h3").click(function () {
+// !   $("h3").after("<a href='#'>Google</a>")
+// ! });
+// ? $("h3").click(function () {
+// ?   $("h3").prepend("<a href='#'>Google</a>")
+// ? });
+// ! $("h3").click(function () {
+// !   $("h3").before("<a href='#'>Google</a>")
+// ! });
+// ? $("h3").click(function () {
+// ?   $("button").remove();
+// ? });
+// ! $("button").click(function () {
+// !   $("h3").empty();
+// ! });
+// ? $("button").click(function () {
+// ?   let x = $("h3").html();
+// ?   console.log(x);
+// ? });
+// ! $("button").click(function () {
+// !   let x = $("h3").text();
+// !   console.log(x);
+// ! });
+// ? $("button").click(function () {
+// ?   $("h3").text("hello world");
+// ? });
+// ! $("button").click(function () {
+// !   $("h3").addClass("text-center");
+// ! });
+// ? $("button").click(function () {
+// ?   $("h3").removeClass("bg-info");
+// ? });
+// ! $("button").click(function () {
+// !   $("h3").css({"width":"50%" , "text-align":"center" , "margin":"auto"});
+// ! });
+// ? $("button").click(function () {
+// ?   $("img").attr("src",'img/testi-2.jpg');
+// ? });
+// ! $(".img-item").click(function (eventInfo){
+// !   let imgSrc = $(eventInfo.target).attr("src");
+// !   $("#mainImage").attr("src",imgSrc);
+// ! })
+// ? let x = $(".test").outerWidth(true);
+// ? console.log(x);
+// ! $("#demo").next().css("borderColor","#09c");
+// ! $("#demo").nextAll().css("borderColor","#09c");
+// ? $("#demo").prev().css("borderColor","#09c");
+// ? $("#demo").prevAll().css("borderColor","#09c");
+// ! $("#demo").prevAll("a").css("borderColor","#09c");
+// ! $("#demo").nextAll("a").css("borderColor","#09c");
+// ? $("#demo").nextUntil(".test").css("borderColor","#09c");
+// ? $("#demo").prevUntil(".test").css("borderColor","#09c");
+// todo $("#demo").siblings().css("borderColor","#09c");
+// ! $("span").click(function (e) { 
+// !   $(e.target).siblings().css("borderColor","#09c");
+// ! });
+// ? $("#demo").parent().css("borderColor","#09c");
+// ? $("#demo").parents().css("borderColor","#09c");
+// todo $("#demo").parentsUntil("body").css("borderColor","#09c");
+// ! $("body").children().css("borderColor","#09c");
+// ! $("body").find('h2').css("borderColor","#09c");
+// todo $("span").eq(3).css("color","#09c");
+$("span").not(".test").css("color","#09c");
